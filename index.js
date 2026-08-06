@@ -23,7 +23,7 @@ console.table(filmes);
 
 //Adicionar um elemento novo no ínicio do array
 filmes.unshift({
-    Título_Nacional: 'Garota Infernal',
+    Título_Nacional: 'iGarota Infernal',
     Duração: '1 hora e 45 minutos',
     Ano_de_Lançamento: '2009',
 });
@@ -32,6 +32,11 @@ console.table(filmes);
 
 //Localizar um elemento existente no array
 let filmeEncontrado = filmes.find((filme) => filme.Título_Nacional == 'Homem-aranha');
-console.log("==================");
-console.log("Titulo encontrado");
+console.log('==================');
+console.log('Titulo encontrado');
 console.table(filmeEncontrado);
+
+//Ordenar o array em ordem alfabética
+let film = ['Branca de neve', 'A pequena sereia'];
+film.sort();
+console.log(film);
