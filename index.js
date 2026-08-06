@@ -48,3 +48,12 @@ console.log(film);
 for (const filme of film) {
      console.log(film);
 }
+
+// If
+const filmes = ['Titanic', 'Matrix', 'Avatar', 'O Rei Leão', 'Interestelar'];
+
+if (filmes.length >= 5) {
+    console.log('O array possui quantidade suficiente de registros.');
+} else {
+    console.log('O array possui quantidade insuficiente de registros.');
+}
