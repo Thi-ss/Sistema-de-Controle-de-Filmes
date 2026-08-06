@@ -37,6 +37,14 @@ console.log('Titulo encontrado');
 console.table(filmeEncontrado);
 
 //Ordenar o array em ordem alfabética
-let film = ['Branca de neve', 'A pequena sereia'];
+let film = ['Branca de neve', 'A pequena sereia', 'Cinderela'];
 film.sort();
 console.log(film);
+
+//Desenvolvimento C
+
+//Percorrer todos os elementos do array utilizando uma estrutura de repetição
+
+for (const filme of film) {
+     console.log(film);
+}
