@@ -15,3 +15,16 @@ console.table(filmes);
 //Adicionar um novo elemento ao final do array utilizando:
 filmes.push();
 console.table(filmes);
+
+//Crie um novo array contendo apenas parte dos registros utilizando:
+let filmesM = [{
+    Título_Nacional: "Garota Infernal ",
+    Duração: "1 hora e 45 minutos ",
+    Ano_de_Lançamento: "2009 "
+},{
+    Título_Nacional: "Doutor Estranho no Multiverso da Loucura ",
+    Duração: "2 horas e 6 minutos ",
+    Ano_de_Lançamento: "2022"
+}];
+let novoArray = filmesM.filter(filmeM => filmeM.length > 2);
+console.table(novoArray);
