@@ -20,4 +20,13 @@ filmes.shift(filmes[0].Título_Nacional)
 console.log(`Filme: ${filmes}`);
 
 //Exibir o resultado
-console.table (filmes)
+console.table(filmes)
+
+//Adicionar um elemento novo no ínicio do array
+filmes.unshift({
+    Título_Nacional: 'Garota Infernal',
+    Duração: '1 hora e 45 minutos',
+    Ano_de_Lançamento: '2009',
+});
+
+console.table(filmes)
