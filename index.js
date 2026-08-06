@@ -16,11 +16,10 @@ console.log(`Duração: ${filmes[0].Duração}`);
 console.log(`Ano de lançamento: ${filmes[0].Ano_de_Lançamento}`);
 
 //Removendo o primeiro elemento
-filmes.shift(filmes[0].Título_Nacional)
-console.log(`Filme: ${filmes}`);
+filmes.shift(filmes[0].Título_Nacional);
 
 //Exibir o resultado
-console.table(filmes)
+console.table(filmes);
 
 //Adicionar um elemento novo no ínicio do array
 filmes.unshift({
@@ -29,4 +28,10 @@ filmes.unshift({
     Ano_de_Lançamento: '2009',
 });
 
-console.table(filmes)
+console.table(filmes);
+
+//Localizar um elemento existente no array
+let filmeEncontrado = filmes.find((filme) => filme.Título_Nacional == 'Homem-aranha');
+console.log("==================");
+console.log("Titulo encontrado");
+console.table(filmeEncontrado);
