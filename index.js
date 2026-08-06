@@ -32,3 +32,16 @@ console.table(novoArray);
 //Inverter a ordem do array utilizando:
 filmes.reverse();
 console.table(filmes);
+
+//Exibir a quantidade de elementos do array utilizando:
+let filmesM = [{
+    Título_Nacional: "Garota Infernal ",
+    Duração: "1 hora e 45 minutos ",
+    Ano_de_Lançamento: "2009 "
+},{
+    Título_Nacional: "Doutor Estranho no Multiverso da Loucura ",
+    Duração: "2 horas e 6 minutos ",
+    Ano_de_Lançamento: "2022"
+}];
+filmesM.length(filmeM => filmeM.length > 2);
+console.log(filmeM.length);
