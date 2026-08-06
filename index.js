@@ -7,3 +7,7 @@ let filmes = [{
 console.log(`Filme: ${filmes[0].Título_Nacional}`);
 console.log(`Duração: ${filmes[0].Duração}`);
 console.log(`Ano de lançamento: ${filmes[0].Ano_de_Lançamento}`);
+
+//Remover o último elemento do array utilizando:
+filmes.pop();
+console.table(filmes);
