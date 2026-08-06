@@ -11,3 +11,7 @@ console.log(`Ano de lançamento: ${filmes[0].Ano_de_Lançamento}`);
 //Remover o último elemento do array utilizando:
 filmes.pop();
 console.table(filmes);
+
+//Adicionar um novo elemento ao final do array utilizando:
+filmes.push();
+console.table(filmes);
