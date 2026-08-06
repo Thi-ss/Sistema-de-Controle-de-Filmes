@@ -28,3 +28,7 @@ let filmesM = [{
 }];
 let novoArray = filmesM.filter(filmeM => filmeM.length > 2);
 console.table(novoArray);
+
+//Inverter a ordem do array utilizando:
+filmes.reverse();
+console.table(filmes);
