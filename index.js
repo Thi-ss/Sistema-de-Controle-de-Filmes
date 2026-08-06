@@ -7,3 +7,36 @@ let filmes = [{
 console.log(`Filme: ${filmes[0].Título_Nacional}`);
 console.log(`Duração: ${filmes[0].Duração}`);
 console.log(`Ano de lançamento: ${filmes[0].Ano_de_Lançamento}`);
+
+//Remover o último elemento do array utilizando:
+filmes.pop();
+console.table(filmes);
+
+//Adicionar um novo elemento ao final do array utilizando:
+filmes.push();
+console.table(filmes);
+
+//Crie um novo array contendo apenas parte dos registros utilizando:
+let filmesM = [{
+    Título_Nacional: "Garota Infernal ",
+    Duração: "1 hora e 45 minutos ",
+    Ano_de_Lançamento: "2009 "
+},{
+    Título_Nacional: "Doutor Estranho no Multiverso da Loucura ",
+    Duração: "2 horas e 6 minutos ",
+    Ano_de_Lançamento: "2022"
+}];
+let novoArray = filmesM.filter(filmeM => filmeM.length > 2);
+console.table(novoArray);
+
+//Inverter a ordem do array utilizando:
+filmes.reverse();
+console.table(filmes);
+
+//Exibir a quantidade de elementos do array utilizando:
+filmesM.length(filmeM => filmeM.length > 2);
+console.log(filmeM.length);
+
+//Transforme todos os elementos do array utilizando:
+let filmemap = filmeM.map((filme) => filme.toUpperCase());
+console.table(filmeM);
