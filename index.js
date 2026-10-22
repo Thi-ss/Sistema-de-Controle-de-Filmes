@@ -1,59 +1,42 @@
-let filmes = [
-    {
-        Título_Nacional: 'Garota Infernal',
-        Duração: '1 hora e 45 minutos',
-        Ano_de_Lançamento: '2009',
-    },
-    {
-        Título_Nacional: 'Homem-aranha',
-        Duração: '2 horas e 25 minutos',
-        Ano_de_Lançamento: '2026',
-    },
-];
+let filmes = [{
+    Título_Nacional: "Garota Infernal",
+    Duração: "1 hora e 45 minutos",
+    Ano_de_Lançamento: "2009"
+},];
 
 console.log(`Filme: ${filmes[0].Título_Nacional}`);
 console.log(`Duração: ${filmes[0].Duração}`);
 console.log(`Ano de lançamento: ${filmes[0].Ano_de_Lançamento}`);
 
-//Removendo o primeiro elemento
-filmes.shift(filmes[0].Título_Nacional);
-
-//Exibir o resultado
+//Remover o último elemento do array utilizando:
+filmes.pop();
 console.table(filmes);
 
-//Adicionar um elemento novo no ínicio do array
-filmes.unshift({
-    Título_Nacional: 'iGarota Infernal',
-    Duração: '1 hora e 45 minutos',
-    Ano_de_Lançamento: '2009',
-});
-
+//Adicionar um novo elemento ao final do array utilizando:
+filmes.push();
 console.table(filmes);
 
-//Localizar um elemento existente no array
-let filmeEncontrado = filmes.find((filme) => filme.Título_Nacional == 'Homem-aranha');
-console.log('==================');
-console.log('Titulo encontrado');
-console.table(filmeEncontrado);
+//Crie um novo array contendo apenas parte dos registros utilizando:
+let filmesM = [{
+    Título_Nacional: "Garota Infernal ",
+    Duração: "1 hora e 45 minutos ",
+    Ano_de_Lançamento: "2009 "
+},{
+    Título_Nacional: "Doutor Estranho no Multiverso da Loucura ",
+    Duração: "2 horas e 6 minutos ",
+    Ano_de_Lançamento: "2022"
+}];
+let novoArray = filmesM.filter(filmeM => filmeM.length > 2);
+console.table(novoArray);
 
-//Ordenar o array em ordem alfabética
-let film = ['Branca de neve', 'A pequena sereia', 'Cinderela'];
-film.sort();
-console.log(film);
+//Inverter a ordem do array utilizando:
+filmes.reverse();
+console.table(filmes);
 
-//Desenvolvimento C
+//Exibir a quantidade de elementos do array utilizando:
+filmesM.length(filmeM => filmeM.length > 2);
+console.log(filmeM.length);
 
-//Percorrer todos os elementos do array utilizando uma estrutura de repetição
-
-for (const filme of film) {
-     console.log(film);
-}
-
-// If
-const filmes = ['Titanic', 'Matrix', 'Avatar', 'O Rei Leão', 'Interestelar'];
-
-if (filmes.length >= 5) {
-    console.log('O array possui quantidade suficiente de registros.');
-} else {
-    console.log('O array possui quantidade insuficiente de registros.');
-}
+//Transforme todos os elementos do array utilizando:
+let filmemap = filmeM.map((filme) => filme.toUpperCase());
+console.table(filmeM);
